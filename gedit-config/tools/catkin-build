@@ -1,0 +1,11 @@
+#!/bin/sh
+# [Gedit Tool]
+# Name=Catkin Build
+# Save-files=document
+# Applicability=all
+# Input=document
+# Languages=cpp
+# Shortcut=F3
+# Output=output-panel
+
+catkin build pick_verification

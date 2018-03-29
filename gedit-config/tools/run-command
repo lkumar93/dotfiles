@@ -1,0 +1,14 @@
+#!/bin/sh
+# [Gedit Tool]
+# Shortcut=F5
+# Name=Run command
+# Languages=python
+# Output=nothing
+# Input=document
+# Comment=Execute a custom command and put its output in a new document
+# Applicability=all
+# Save-files=document
+
+
+#TODO: use "gconftool-2 -g /desktop/gnome/applications/terminal/exec"
+python $GEDIT_CURRENT_DOCUMENT

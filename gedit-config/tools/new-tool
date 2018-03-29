@@ -1,0 +1,9 @@
+#!/bin/sh
+# [Gedit Tool]
+# Name=New tool
+# Save-files=nothing
+# Applicability=all
+# Input=nothing
+# Languages=python
+# Output=output-panel
+
