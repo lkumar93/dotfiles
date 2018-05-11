@@ -1,11 +1,17 @@
-#!/bin/sh
+#!/bin/bash
 # [Gedit Tool]
+# Applicability=all
+# Input=nothing
 # Name=Catkin Build
 # Save-files=document
-# Applicability=all
-# Input=document
-# Languages=cpp
-# Shortcut=F3
+# Shortcut=F5
 # Output=output-panel
+# Languages=cpp
 
-catkin build pick_verification
+for package_name in `rospack list-names`
+do
+   if [[ `pwd` = */"$package_name"* ]]; then
+     catkin build $package_name
+     break
+   fi
+done
